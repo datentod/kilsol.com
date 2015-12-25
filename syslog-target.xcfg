@@ -26,4 +26,8 @@
 <LogEvents>
 <Class class="LogLabel">mgmt</Class>
 <Priority>notice</Priority></LogEvents></LogTarget></configuration>
+<<<<<<< HEAD
 </datapower-configuration>
+=======
+</datapower-configuration>
+>>>>>>> origin/master
