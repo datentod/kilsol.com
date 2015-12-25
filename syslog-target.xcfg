@@ -1,0 +1,29 @@
+<datapower-configuration version="3"><export-details><description>Exported Configuration </description><user>admin</user><domain>default</domain><comment/><product-id>9003-XI50-03</product-id><product>XI50</product><display-product>XI50</display-product><model>DataPower XI50</model><display-model>DataPower XI50</display-model><device-name>192.168.0.98:9090</device-name><serial-number>13007V0</serial-number><firmware-version>XI50.4.0.2.15</firmware-version><display-firmware-version>XI50.4.0.2.15</display-firmware-version><firmware-build>233803</firmware-build><firmware-timestamp>2013/09/06 11:08:24</firmware-timestamp><current-date>2015-12-25</current-date><current-time>03:32:11 EST</current-time><reset-date>2015-12-23</reset-date><reset-time>20:01:59 EST</reset-time><login-message/><custom-ui-file/></export-details><interface-data><interface name="eth0" ip-addr="192.168.0.50"/><interface name="mgt0" ip-addr="192.168.0.98"/></interface-data><configuration domain="default"><LogTarget name="all-to-syslog" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Type>syslog</Type>
+<SoapVersion>soap11</SoapVersion>
+<Format>text</Format>
+<TimestampFormat>syslog</TimestampFormat>
+<LocalIdentifier>dp.kilsol.com</LocalIdentifier>
+<Size>500</Size>
+<ArchiveMode>rotate</ArchiveMode>
+<UploadMethod>ftp</UploadMethod>
+<Rotate>3</Rotate>
+<UseANSIColor>off</UseANSIColor>
+<RemoteAddress>syslog.kilsol.com</RemoteAddress>
+<RemotePort>514</RemotePort>
+<LocalAddress>management</LocalAddress>
+<SyslogFacility>local7</SyslogFacility>
+<SigningMode>off</SigningMode>
+<EncryptMode>off</EncryptMode>
+<RateLimit>20</RateLimit>
+<FeedbackDetection>off</FeedbackDetection>
+<IdenticalEventSuppression>off</IdenticalEventSuppression>
+<IdenticalEventPeriod>10</IdenticalEventPeriod>
+<LogEvents>
+<Class class="LogLabel">all</Class>
+<Priority>error</Priority></LogEvents>
+<LogEvents>
+<Class class="LogLabel">mgmt</Class>
+<Priority>notice</Priority></LogEvents></LogTarget></configuration>
+</datapower-configuration>
